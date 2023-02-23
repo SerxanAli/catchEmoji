@@ -1,9 +1,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    // birinci Ders
     
     @IBOutlet weak var Emoji: UILabel!
     @IBOutlet weak var Score: UILabel!
@@ -20,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.61, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
         
         
         emojiTiklanmasi()
@@ -30,7 +27,8 @@ class ViewController: UIViewController {
     
     @objc func haraket(){
         
-        //
+        HereketKordinati()
+        Emoji.text = "😃"
         
         
     }
@@ -45,10 +43,21 @@ class ViewController: UIViewController {
     @objc func EmojiyeTiklandi(){
         
         Emoji.text = "🤬"
-        print("Taped")
-       score += 1
+        HereketKordinati()
+        //   print("Taped")
+        score += 1
+        
     }
-
-
+    
+    
+    func HereketKordinati(){
+        
+        Emoji.layer.position.x = CGFloat(Int.random(in: 20...300))
+        Emoji.layer.position.y = CGFloat(Int.random(in: 20...468))
+        
+        
+    }
+    
+    
 }
 

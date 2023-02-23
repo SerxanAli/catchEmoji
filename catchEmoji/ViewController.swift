@@ -20,14 +20,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = Timer.scheduledTimer(timeInterval: 1.61, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.61, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
         
         
         emojiTiklanmasi()
         
         secrenWidth = Int(view.frame.size.width)
         secrenHeight = Int(view.frame.size.height)
-        
         
     }
     

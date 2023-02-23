@@ -13,14 +13,21 @@ class ViewController: UIViewController {
     
     var timer = Timer()
     
+    var secrenWidth = 0
+    var secrenHeight = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = Timer.scheduledTimer(timeInterval: 0.61, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.61, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
         
         
         emojiTiklanmasi()
+        
+        secrenWidth = Int(view.frame.size.width)
+        secrenHeight = Int(view.frame.size.height)
+     
         
     }
     
@@ -44,18 +51,27 @@ class ViewController: UIViewController {
         
         Emoji.text = "🤬"
         HereketKordinati()
-        //   print("Taped")
         score += 1
         
+        if score == 60 {
+            performSegue(withIdentifier: "page3", sender: nil)
+            timer.invalidate()
+        }
     }
     
     
     func HereketKordinati(){
         
-        Emoji.layer.position.x = CGFloat(Int.random(in: 20...300))
-        Emoji.layer.position.y = CGFloat(Int.random(in: 20...468))
+       // var numWidth = Double(secrenWidth) * 0.03
         
         
+        
+        Emoji.layer.position.x = CGFloat(Double.random(in: Double(secrenWidth) * 0.07...Double(secrenWidth) * 0.93))
+        Emoji.layer.position.y = CGFloat(Double.random(in: Double(secrenHeight) * 0.14...Double(secrenHeight) * 0.90))
+        
+       // print(CGFloat(Double.random(in: Double(secrenWidth) * 0.03...Double(secrenWidth) * 0.97)))
+        print("x-\(Emoji.layer.position.x)")
+        print("y-\(Emoji.layer.position.y)")
     }
     
     

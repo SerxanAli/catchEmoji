@@ -43,6 +43,7 @@
                             <constraint firstItem="ZKO-nw-ZjW" firstAttribute="centerY" secondItem="sYU-GM-qot" secondAttribute="centerY" id="kOf-XF-uHK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Fge-hr-N0E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIA-R8-jcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,14 +82,60 @@
                     <connections>
                         <outlet property="Emoji" destination="sXx-bh-k77" id="cJG-wy-esh"/>
                         <outlet property="Score" destination="bpq-td-KdE" id="6tS-08-6ex"/>
+                        <segue destination="Brj-X8-YJn" kind="presentation" identifier="page3" modalPresentationStyle="fullScreen" id="Ud9-Rc-BwC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="58"/>
+            <point key="canvasLocation" x="122" y="58"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9LN-e2-3sD">
+            <objects>
+                <viewController id="Brj-X8-YJn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNo-b5-Oyq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won 🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1N9-4P-a4W">
+                                <rect key="frame" x="57" y="220" width="206" height="40"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-ny-jy9">
+                                <rect key="frame" x="109.5" y="282" width="101" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="new Game">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="pQN-ub-H0v" kind="presentation" modalPresentationStyle="fullScreen" id="d9x-Aq-jFZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uCO-WK-8o6"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="bVb-ny-jy9" firstAttribute="top" secondItem="1N9-4P-a4W" secondAttribute="bottom" constant="22" id="Y8c-8q-00D"/>
+                            <constraint firstItem="1N9-4P-a4W" firstAttribute="centerX" secondItem="gNo-b5-Oyq" secondAttribute="centerX" id="gaW-fJ-y4p"/>
+                            <constraint firstItem="1N9-4P-a4W" firstAttribute="centerY" secondItem="gNo-b5-Oyq" secondAttribute="centerY" id="kZC-58-nds"/>
+                            <constraint firstItem="bVb-ny-jy9" firstAttribute="centerX" secondItem="gNo-b5-Oyq" secondAttribute="centerX" id="r1s-Ma-AcJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3CC-54-dLH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aW-xD-Rav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="58"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

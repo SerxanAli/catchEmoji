@@ -23,21 +23,30 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(haraket), userInfo: nil, repeats: true)
         
         
+        emojiTiklanmasi()
         
     }
     
-    func emojiTiklanmasi(){
-        
-        
-        
-        
-    }
     
     @objc func haraket(){
         
         //
         
         
+    }
+    
+    func emojiTiklanmasi(){
+        
+        Emoji.isUserInteractionEnabled = true
+        let gestAlqilayici = UITapGestureRecognizer(target: self, action: #selector(EmojiyeTiklandi))
+        Emoji.addGestureRecognizer(gestAlqilayici)
+    }
+    
+    @objc func EmojiyeTiklandi(){
+        
+        Emoji.text = "🤬"
+        print("Taped")
+       score += 1
     }
 
 

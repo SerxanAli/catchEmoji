@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         secrenWidth = Int(view.frame.size.width)
         secrenHeight = Int(view.frame.size.height)
-     
+        
         
     }
     
@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         
         HereketKordinati()
         Emoji.text = "😃"
-        
         
     }
     
@@ -62,16 +61,11 @@ class ViewController: UIViewController {
     
     func HereketKordinati(){
         
-       // var numWidth = Double(secrenWidth) * 0.03
-        
-        
-        
         Emoji.layer.position.x = CGFloat(Double.random(in: Double(secrenWidth) * 0.07...Double(secrenWidth) * 0.93))
         Emoji.layer.position.y = CGFloat(Double.random(in: Double(secrenHeight) * 0.14...Double(secrenHeight) * 0.90))
         
-       // print(CGFloat(Double.random(in: Double(secrenWidth) * 0.03...Double(secrenWidth) * 0.97)))
-        print("x-\(Emoji.layer.position.x)")
-        print("y-\(Emoji.layer.position.y)")
+        // print("x-\(Emoji.layer.position.x)")
+        // print("y-\(Emoji.layer.position.y)")
     }
     
     

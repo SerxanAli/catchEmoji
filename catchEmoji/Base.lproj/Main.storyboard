@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-nw-ZjW">
-                                <rect key="frame" x="68" y="228" width="184" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-nw-ZjW">
+                                <rect key="frame" x="106" y="207.5" width="108" height="65"/>
                                 <color key="backgroundColor" red="0.21431274510000001" green="0.57461684940000002" blue="0.54065701420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -28,9 +28,8 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Adf-B9-l9W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catch Me 😃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-FE-bWl">
-                                <rect key="frame" x="16" y="91" width="288" height="53"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catch Me 😃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-FE-bWl">
+                                <rect key="frame" x="51" y="104" width="219" height="40"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,14 +39,18 @@
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="ZKO-nw-ZjW" firstAttribute="centerX" secondItem="sYU-GM-qot" secondAttribute="centerX" id="Gw8-Z3-4lq"/>
+                            <constraint firstItem="ZKO-nw-ZjW" firstAttribute="top" secondItem="qaH-FE-bWl" secondAttribute="bottom" constant="64" id="IOA-FL-qVK"/>
+                            <constraint firstItem="qaH-FE-bWl" firstAttribute="centerX" secondItem="sYU-GM-qot" secondAttribute="centerX" id="Zny-iR-kbO"/>
                             <constraint firstItem="ZKO-nw-ZjW" firstAttribute="centerY" secondItem="sYU-GM-qot" secondAttribute="centerY" id="kOf-XF-uHK"/>
+                            <constraint firstItem="ZKO-nw-ZjW" firstAttribute="centerY" secondItem="sYU-GM-qot" secondAttribute="centerY" id="wRH-2k-7nx"/>
+                            <constraint firstItem="ZKO-nw-ZjW" firstAttribute="centerX" secondItem="sYU-GM-qot" secondAttribute="centerX" id="zMz-7R-xMO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fge-hr-N0E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIA-R8-jcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-786" y="58"/>
+            <point key="canvasLocation" x="-617" y="-545"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -57,16 +60,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXx-bh-k77">
-                                <rect key="frame" x="134" y="211.5" width="52" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-td-KdE">
+                                <rect key="frame" x="16" y="20" width="89" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-td-KdE">
-                                <rect key="frame" x="16" y="20" width="126" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="😃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXx-bh-k77">
+                                <rect key="frame" x="242" y="20" width="62" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -74,8 +77,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.2991136013418047" green="0.57461684940000002" blue="0.55571469065328083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sXx-bh-k77" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Cn-ok-Gu5"/>
-                            <constraint firstItem="sXx-bh-k77" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eib-TZ-68g"/>
+                            <constraint firstItem="bpq-td-KdE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BtO-wT-lqQ"/>
+                            <constraint firstItem="bpq-td-KdE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="H9D-0k-AMd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tBt-M5-ySu"/>
@@ -87,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="58"/>
+            <point key="canvasLocation" x="163" y="-545"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9LN-e2-3sD">
@@ -129,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aW-xD-Rav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="58"/>
+            <point key="canvasLocation" x="960" y="-545"/>
         </scene>
     </scenes>
     <resources>

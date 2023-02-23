@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     @objc func EmojiyeTiklandi(){
         
         Emoji.text = "🤬"
-        HereketKordinati()
+        //HereketKordinati()
         score += 1
         
         if score == 60 {

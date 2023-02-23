@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     
     // birinci Ders
     
-    let timer = Timer()
+    var timer = Timer()
     
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @objc func haraket(){
         
-        // 
+        //
         
     }
 

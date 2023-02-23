@@ -1,18 +1,21 @@
-//
-//  ViewController.swift
-//  catchEmoji
-//
-//  Created by serhan on 23.02.23.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    
+    // birinci Ders
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
     }
+    
+    
+    
 
 
 }

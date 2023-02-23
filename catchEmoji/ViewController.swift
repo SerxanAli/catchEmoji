@@ -5,6 +5,15 @@ class ViewController: UIViewController {
     
     // birinci Ders
     
+    @IBOutlet weak var Emoji: UILabel!
+    @IBOutlet weak var Score: UILabel!
+    
+    var score = 0 {
+        didSet {
+            Score.text = "Score: \(score)"
+        }
+    }
+    
     var timer = Timer()
     
     
@@ -17,10 +26,17 @@ class ViewController: UIViewController {
         
     }
     
+    func emojiTiklanmasi(){
+        
+        
+        
+        
+    }
     
     @objc func haraket(){
         
         //
+        
         
     }
 
